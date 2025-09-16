@@ -18,13 +18,15 @@
         "laravel/telescope": "^5.11",
         "laravel/tinker": "^2.10.1",
         "laravel/wayfinder": "^0.1.9",
-        "nunomaduro/essentials": "^0.1"
+        "nunomaduro/essentials": "^0.1",
+        "laravel/nova": "^5.0"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^3.6",
         "fakerphp/faker": "^1.23",
         "larastan/larastan": "^3.0",
         "laravel/boost": "^1.1",
+        "laravel/nova-devtool": "^1.8",
         "laravel/pail": "^1.2.2",
         "laravel/pint": "^1.18",
         "laravel/sail": "^1.41",
@@ -75,6 +77,12 @@
             "@php artisan test"
         ]
     },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://nova.laravel.com"
+        }
+    ],
     "extra": {
         "laravel": {
             "dont-discover": []
