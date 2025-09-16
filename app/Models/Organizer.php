@@ -13,6 +13,13 @@ class Organizer extends Model
     /** @use HasFactory<\Database\Factories\OrganizerFactory> */
     use HasFactory;
 
+    protected $fillable = [
+        'name',
+        'email',
+        'website',
+        'logo_url',
+    ];
+
     public function events(): HasMany
     {
         return $this->hasMany(Event::class);

@@ -13,6 +13,21 @@ class Track extends Model
     /** @use HasFactory<\Database\Factories\TrackFactory> */
     use HasFactory;
 
+    protected $fillable = [
+        'name',
+        'country',
+        'city',
+        'latitude',
+        'longitude',
+        'website',
+        'noise_limit',
+    ];
+
+    protected $casts = [
+        'latitude' => 'float',
+        'longitude' => 'float',
+    ];
+
     public function events(): HasMany
     {
         return $this->hasMany(Event::class);

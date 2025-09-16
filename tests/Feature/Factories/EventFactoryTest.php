@@ -14,8 +14,8 @@ describe('EventFactory', function () {
         expect($event->organizer_id)->toBeInt();
         expect($event->title)->toBeString()->not->toBeEmpty();
         expect($event->description)->toBeString()->or->toBeNull();
-        expect($event->start_date)->toBeString();
-        expect($event->end_date)->toBeString();
+        expect($event->start_date)->toBeInstanceOf(Carbon\CarbonInterface::class);
+        expect($event->end_date)->toBeInstanceOf(Carbon\CarbonInterface::class);
         expect($event->website)->toBeString()->or->toBeNull();
     });
 
@@ -35,17 +35,19 @@ describe('EventFactory', function () {
         $events->each(function ($event) {
             expect($event)->toBeInstanceOf(Event::class);
             expect($event->title)->toBeString()->not->toBeEmpty();
-            expect($event->start_date)->toBeString();
-            expect($event->end_date)->toBeString();
+            expect($event->start_date)->toBeInstanceOf(Carbon\CarbonInterface::class);
+            expect($event->end_date)->toBeInstanceOf(Carbon\CarbonInterface::class);
         });
     });
 
-    it('generates valid date strings', function () {
+    it('generates valid date objects', function () {
         $event = Event::factory()->make();
 
-        // Check that dates are in valid format (YYYY-MM-DD)
-        expect($event->start_date)->toMatch('/^\d{4}-\d{2}-\d{2}$/');
-        expect($event->end_date)->toMatch('/^\d{4}-\d{2}-\d{2}$/');
+        // Check that dates are Carbon objects and can be formatted properly
+        expect($event->start_date)->toBeInstanceOf(Carbon\CarbonInterface::class);
+        expect($event->end_date)->toBeInstanceOf(Carbon\CarbonInterface::class);
+        expect($event->start_date->format('Y-m-d'))->toMatch('/^\d{4}-\d{2}-\d{2}$/');
+        expect($event->end_date->format('Y-m-d'))->toMatch('/^\d{4}-\d{2}-\d{2}$/');
     });
 
     it('can use existing track and organizer', function () {
@@ -74,8 +76,8 @@ describe('EventFactory', function () {
 
         expect($event->title)->toBe('Advanced Track Day Experience');
         expect($event->description)->toBe('High-performance track day for experienced drivers');
-        expect($event->start_date)->toBe('2025-10-15');
-        expect($event->end_date)->toBe('2025-10-15');
+        expect($event->start_date->format('Y-m-d'))->toBe('2025-10-15');
+        expect($event->end_date->format('Y-m-d'))->toBe('2025-10-15');
         expect($event->website)->toBe('https://www.trackday.com/advanced');
     });
 
@@ -114,8 +116,8 @@ describe('EventFactory', function () {
         $this->assertDatabaseHas('events', [
             'id' => $event->id,
             'title' => 'Beginner Track Day',
-            'start_date' => '2025-11-20',
-            'end_date' => '2025-11-20',
+            'start_date' => '2025-11-20 00:00:00',
+            'end_date' => '2025-11-20 00:00:00',
         ]);
     });
 
@@ -185,8 +187,8 @@ describe('EventFactory', function () {
             'end_date' => '2025-08-17',
         ]);
 
-        expect($event->start_date)->toBe('2025-08-15');
-        expect($event->end_date)->toBe('2025-08-17');
+        expect($event->start_date->format('Y-m-d'))->toBe('2025-08-15');
+        expect($event->end_date->format('Y-m-d'))->toBe('2025-08-17');
         expect($event->title)->toBe('Weekend Track Experience');
     });
 
@@ -197,8 +199,8 @@ describe('EventFactory', function () {
             'end_date' => '2025-09-10',
         ]);
 
-        expect($event->start_date)->toBe('2025-09-10');
-        expect($event->end_date)->toBe('2025-09-10');
+        expect($event->start_date->format('Y-m-d'))->toBe('2025-09-10');
+        expect($event->end_date->format('Y-m-d'))->toBe('2025-09-10');
     });
 
     it('generates realistic event titles', function () {

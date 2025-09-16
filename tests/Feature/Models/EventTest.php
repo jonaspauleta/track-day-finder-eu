@@ -14,8 +14,8 @@ it('can create an event using factory', function () {
     expect($event->organizer_id)->toBeInt();
     expect($event->title)->toBeString();
     expect($event->description)->toBeString()->or->toBeNull();
-    expect($event->start_date)->toBeString();
-    expect($event->end_date)->toBeString();
+    expect($event->start_date)->toBeInstanceOf(Carbon\CarbonInterface::class);
+    expect($event->end_date)->toBeInstanceOf(Carbon\CarbonInterface::class);
     expect($event->website)->toBeString()->or->toBeNull();
     expect($event->created_at)->not->toBeNull();
     expect($event->updated_at)->not->toBeNull();
@@ -39,8 +39,8 @@ it('can create an event with specific attributes', function () {
     expect($event->organizer_id)->toBe($organizer->id);
     expect($event->title)->toBe('Advanced Track Day');
     expect($event->description)->toBe('High-performance track day for experienced drivers');
-    expect($event->start_date)->toBe('2025-10-15');
-    expect($event->end_date)->toBe('2025-10-15');
+    expect($event->start_date->format('Y-m-d'))->toBe('2025-10-15');
+    expect($event->end_date->format('Y-m-d'))->toBe('2025-10-15');
     expect($event->website)->toBe('https://www.trackday.com/advanced');
 });
 
@@ -117,8 +117,8 @@ it('can handle date fields correctly', function () {
         'end_date' => '2025-12-03',
     ]);
 
-    expect($event->start_date)->toBe('2025-12-01');
-    expect($event->end_date)->toBe('2025-12-03');
+    expect($event->start_date->format('Y-m-d'))->toBe('2025-12-01');
+    expect($event->end_date->format('Y-m-d'))->toBe('2025-12-03');
 });
 
 it('creates related models when using factory defaults', function () {
@@ -139,6 +139,6 @@ it('can create events with multi-day duration', function () {
         'end_date' => '2025-08-17',
     ]);
 
-    expect($event->start_date)->toBe('2025-08-15');
-    expect($event->end_date)->toBe('2025-08-17');
+    expect($event->start_date->format('Y-m-d'))->toBe('2025-08-15');
+    expect($event->end_date->format('Y-m-d'))->toBe('2025-08-17');
 });
