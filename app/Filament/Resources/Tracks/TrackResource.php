@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Filament\Resources\Tracks;
 
 use App\Filament\Resources\Tracks\Pages\CreateTrack;

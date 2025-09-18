@@ -76,7 +76,9 @@
         "test": [
             "@php artisan config:clear --ansi",
             "@php artisan test"
-        ]
+        ],
+        "phpstan": "./vendor/bin/phpstan analyse --memory-limit=512M",
+        "pint": "./vendor/bin/pint"
     },
     "extra": {
         "laravel": {
