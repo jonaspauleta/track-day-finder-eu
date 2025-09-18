@@ -4,8 +4,8 @@
   "settings": {
     "width": 2000,
     "height": 2000,
-    "scrollTop": -334,
-    "scrollLeft": -126.4471,
+    "scrollTop": -76,
+    "scrollLeft": -3,
     "zoomLevel": 1,
     "show": 431,
     "database": 4,
@@ -77,7 +77,7 @@
           "y": 497,
           "zIndex": 2,
           "widthName": 60,
-          "widthComment": 148,
+          "widthComment": 135,
           "color": ""
         },
         "meta": {
@@ -111,8 +111,8 @@
           "x": 539,
           "y": 102,
           "zIndex": 2,
-          "widthName": 61,
-          "widthComment": 154,
+          "widthName": 60,
+          "widthComment": 142,
           "color": ""
         },
         "meta": {
@@ -153,7 +153,7 @@
           "y": 463,
           "zIndex": 2,
           "widthName": 60,
-          "widthComment": 98,
+          "widthComment": 89,
           "color": ""
         },
         "meta": {
@@ -195,7 +195,7 @@
           "keys": 0,
           "widthName": 60,
           "widthComment": 60,
-          "widthDataType": 75,
+          "widthDataType": 67,
           "widthDefault": 60
         },
         "meta": {
@@ -215,7 +215,7 @@
           "keys": 0,
           "widthName": 60,
           "widthComment": 60,
-          "widthDataType": 75,
+          "widthDataType": 67,
           "widthDefault": 60
         },
         "meta": {
@@ -235,7 +235,7 @@
           "keys": 0,
           "widthName": 60,
           "widthComment": 60,
-          "widthDataType": 75,
+          "widthDataType": 67,
           "widthDefault": 60
         },
         "meta": {
@@ -255,7 +255,7 @@
           "keys": 0,
           "widthName": 60,
           "widthComment": 60,
-          "widthDataType": 79,
+          "widthDataType": 72,
           "widthDefault": 60
         },
         "meta": {
@@ -275,7 +275,7 @@
           "keys": 0,
           "widthName": 60,
           "widthComment": 60,
-          "widthDataType": 77,
+          "widthDataType": 72,
           "widthDefault": 60
         },
         "meta": {
@@ -295,7 +295,7 @@
           "keys": 0,
           "widthName": 60,
           "widthComment": 60,
-          "widthDataType": 75,
+          "widthDataType": 67,
           "widthDefault": 60
         },
         "meta": {
@@ -313,8 +313,8 @@
         "options": 0,
         "ui": {
           "keys": 0,
-          "widthName": 63,
-          "widthComment": 125,
+          "widthName": 60,
+          "widthComment": 117,
           "widthDataType": 60,
           "widthDefault": 60
         },
@@ -333,7 +333,7 @@
         "options": 8,
         "ui": {
           "keys": 0,
-          "widthName": 63,
+          "widthName": 60,
           "widthComment": 60,
           "widthDataType": 60,
           "widthDefault": 60
@@ -353,7 +353,7 @@
         "options": 8,
         "ui": {
           "keys": 0,
-          "widthName": 67,
+          "widthName": 62,
           "widthComment": 60,
           "widthDataType": 60,
           "widthDefault": 60
@@ -395,7 +395,7 @@
           "keys": 0,
           "widthName": 60,
           "widthComment": 60,
-          "widthDataType": 75,
+          "widthDataType": 67,
           "widthDefault": 60
         },
         "meta": {
@@ -415,7 +415,7 @@
           "keys": 0,
           "widthName": 60,
           "widthComment": 60,
-          "widthDataType": 75,
+          "widthDataType": 67,
           "widthDefault": 60
         },
         "meta": {
@@ -435,7 +435,7 @@
           "keys": 0,
           "widthName": 60,
           "widthComment": 60,
-          "widthDataType": 75,
+          "widthDataType": 67,
           "widthDefault": 60
         },
         "meta": {
@@ -455,7 +455,7 @@
           "keys": 0,
           "widthName": 60,
           "widthComment": 60,
-          "widthDataType": 75,
+          "widthDataType": 67,
           "widthDefault": 60
         },
         "meta": {
@@ -473,7 +473,7 @@
         "options": 8,
         "ui": {
           "keys": 0,
-          "widthName": 63,
+          "widthName": 60,
           "widthComment": 60,
           "widthDataType": 60,
           "widthDefault": 60
@@ -493,7 +493,7 @@
         "options": 8,
         "ui": {
           "keys": 0,
-          "widthName": 67,
+          "widthName": 62,
           "widthComment": 60,
           "widthDataType": 60,
           "widthDefault": 60
@@ -553,7 +553,7 @@
         "options": 8,
         "ui": {
           "keys": 2,
-          "widthName": 72,
+          "widthName": 67,
           "widthComment": 60,
           "widthDataType": 60,
           "widthDefault": 60
@@ -575,7 +575,7 @@
           "keys": 0,
           "widthName": 60,
           "widthComment": 60,
-          "widthDataType": 75,
+          "widthDataType": 67,
           "widthDefault": 60
         },
         "meta": {
@@ -593,7 +593,7 @@
         "options": 0,
         "ui": {
           "keys": 0,
-          "widthName": 65,
+          "widthName": 61,
           "widthComment": 60,
           "widthDataType": 60,
           "widthDefault": 60
@@ -655,7 +655,7 @@
           "keys": 0,
           "widthName": 60,
           "widthComment": 60,
-          "widthDataType": 75,
+          "widthDataType": 67,
           "widthDefault": 60
         },
         "meta": {
@@ -673,7 +673,7 @@
         "options": 8,
         "ui": {
           "keys": 0,
-          "widthName": 63,
+          "widthName": 60,
           "widthComment": 60,
           "widthDataType": 60,
           "widthDefault": 60
@@ -693,7 +693,7 @@
         "options": 8,
         "ui": {
           "keys": 0,
-          "widthName": 67,
+          "widthName": 62,
           "widthComment": 60,
           "widthDataType": 60,
           "widthDefault": 60
@@ -715,7 +715,7 @@
           "columnIds": [
             "tracks_id"
           ],
-          "x": 591,
+          "x": 571,
           "y": 645,
           "direction": 2
         },
@@ -743,7 +743,7 @@
           "columnIds": [
             "organizers_id"
           ],
-          "x": 732.5,
+          "x": 726,
           "y": 326,
           "direction": 8
         },
@@ -752,7 +752,7 @@
           "columnIds": [
             "events_organizer_id"
           ],
-          "x": 933,
+          "x": 926.5,
           "y": 463,
           "direction": 4
         },
