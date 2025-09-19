@@ -165,6 +165,24 @@ function SelectScrollDownButton({
   )
 }
 
+function SelectCountry() {
+  return (
+    <Select>
+      <SelectTrigger className="w-[180px]">
+        <SelectValue placeholder="Select a country" />
+      </SelectTrigger>
+      <SelectContent>
+        <SelectGroup>
+          <SelectItem value="Portugal">Portugal</SelectItem>
+          <SelectItem value="Spain">Spain</SelectItem>
+        </SelectGroup>
+      </SelectContent>
+    </Select>
+  )
+}
+
+
+
 export {
   Select,
   SelectContent,
@@ -176,4 +194,5 @@ export {
   SelectSeparator,
   SelectTrigger,
   SelectValue,
+  SelectCountry,
 }
